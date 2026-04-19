@@ -1,0 +1,8 @@
+version: "3"
+services:
+  trino:
+    image: trinodb/trino:435
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./catalog:/etc/trino/catalog

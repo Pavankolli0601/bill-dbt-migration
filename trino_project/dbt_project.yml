@@ -1,0 +1,19 @@
+name: bill_trino
+version: 1.0.0
+profile: bill_trino
+config-version: 2
+
+model-paths: ["models"]
+test-paths: ["tests"]
+
+models:
+  bill_trino:
+    staging:
+      +schema: staging
+      +materialized: view
+    intermediate:
+      +schema: intermediate
+      +materialized: view
+    marts:
+      +schema: marts
+      +materialized: table
