@@ -1,0 +1,44 @@
+version: 2
+
+models:
+  - name: stg_invoices
+    columns:
+      - name: invoice_id
+        tests: [unique, not_null]
+      - name: invoice_amount
+        tests: [not_null]
+      - name: invoice_status
+        tests:
+          - accepted_values:
+              values: ['paid', 'pending', 'overdue']
+      - name: vendor_id
+        tests: [not_null]
+
+  - name: stg_payments
+    columns:
+      - name: payment_id
+        tests: [unique, not_null]
+      - name: invoice_id
+        tests: [not_null]
+      - name: payment_method
+        tests:
+          - accepted_values:
+              values: ['ACH', 'CARD', 'WIRE', 'INTERNATIONAL']
+
+  - name: stg_vendors
+    columns:
+      - name: vendor_id
+        tests: [unique, not_null]
+      - name: vendor_name
+        tests: [not_null]
+
+  - name: stg_approvals
+    columns:
+      - name: approval_id
+        tests: [unique, not_null]
+      - name: invoice_id
+        tests: [not_null]
+      - name: approval_status
+        tests:
+          - accepted_values:
+              values: ['approved', 'rejected']

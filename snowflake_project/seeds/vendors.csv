@@ -1,0 +1,51 @@
+vendor_id,vendor_name,category,payment_method,risk_tier
+V0001,Johnson Ltd,Software,ACH,High
+V0002,Vincent-Crane,Logistics,ACH,Low
+V0003,Glover Inc,Marketing,Wire,Low
+V0004,Morales-Todd,Legal,ACH,High
+V0005,"Munoz, Huang and Taylor",Office,ACH,Low
+V0006,"Schmidt, Graham and Rivera",Software,ACH,Low
+V0007,Arias-Richardson,Legal,Wire,Low
+V0008,Taylor LLC,Legal,ACH,High
+V0009,White-Downs,Legal,Card,Low
+V0010,Edwards Inc,Office,Wire,Medium
+V0011,"Wheeler, Suarez and Powell",Software,ACH,High
+V0012,Dickson-Ayala,Office,Card,Medium
+V0013,Jimenez-Lam,Marketing,ACH,Medium
+V0014,Mendez PLC,Software,ACH,Medium
+V0015,"Kaufman, Brown and Gomez",Software,Card,Medium
+V0016,"Clark, Boyd and Madden",Legal,Card,Low
+V0017,"Shannon, Hayden and Davis",Office,Wire,Low
+V0018,"Parrish, Anderson and Carlson",Office,ACH,High
+V0019,Oliver LLC,Logistics,Wire,High
+V0020,"Vega, Gomez and Schmidt",Logistics,Wire,Low
+V0021,"Alvarado, Miller and Hill",Software,ACH,High
+V0022,Kline-Knight,Marketing,Card,Low
+V0023,Davis-Hawkins,Marketing,ACH,Medium
+V0024,Cooper-Mckinney,Logistics,Card,High
+V0025,"Wade, Gomez and Espinoza",Logistics,ACH,Medium
+V0026,Powers-Simon,Logistics,ACH,High
+V0027,Hartman Ltd,Logistics,Wire,High
+V0028,"Robinson, Spence and Moore",Software,Wire,High
+V0029,Scott-Taylor,Marketing,Wire,High
+V0030,Garcia Group,Marketing,ACH,Medium
+V0031,"Preston, Joyce and Holmes",Office,Card,High
+V0032,"Smith, Carter and Landry",Legal,ACH,High
+V0033,Harris-Michael,Logistics,ACH,Low
+V0034,"Payne, Mcclain and Hill",Software,Card,Medium
+V0035,Robertson-Washington,Logistics,ACH,Low
+V0036,Evans and Sons,Legal,Wire,Medium
+V0037,Tran-Nguyen,Marketing,Wire,Medium
+V0038,"Hardy, Morgan and Walter",Office,Wire,Medium
+V0039,Lee and Sons,Marketing,Card,Low
+V0040,Crawford and Sons,Marketing,Wire,High
+V0041,Reeves Ltd,Legal,Card,High
+V0042,Johnston Ltd,Legal,Card,High
+V0043,"Smith, Burke and Parsons",Office,Card,Low
+V0044,"Wood, Vargas and Byrd",Marketing,Wire,Medium
+V0045,"Rogers, Bailey and Hill",Software,ACH,Low
+V0046,Watson-Garcia,Marketing,Wire,Low
+V0047,"Ingram, Torres and Reid",Office,Wire,Low
+V0048,Allen-Kim,Office,Card,High
+V0049,Morales Ltd,Office,Wire,Medium
+V0050,Molina-Jennings,Legal,ACH,High
