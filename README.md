@@ -59,6 +59,7 @@ The pipeline follows a medallion architecture across two SQL engines:
 
 ## Repository Structure
 
+```
 bill-dbt-migration/
 ├── data/
 │   ├── generate_data.py        ← Synthetic data generator
@@ -74,10 +75,9 @@ bill-dbt-migration/
 ├── trino/
 │   └── docker-compose.yml      ← Local Trino engine
 └── docs/
-├── architecture.png        ← Pipeline diagram
-└── sql_dialect_cheatsheet.md
-
----
+    ├── architecture.png        ← Pipeline diagram
+    └── sql_dialect_cheatsheet.md
+```
 
 ## Key SQL Dialect Differences Found
 
