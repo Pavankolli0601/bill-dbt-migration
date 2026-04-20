@@ -1,9 +1,7 @@
-# bill-dbt-migration
-dbt migration from Snowflake to Trino/Iceberg — BILL financial domain
 # BILL Financial Ops — dbt Migration: Snowflake → Trino/Iceberg
 
-> Demonstrating production-grade dbt model migration from Snowflake SQL 
-> to Trino SQL — the exact technical challenge faced by BILL's Data 
+> Demonstrating production-grade dbt model migration from Snowflake SQL
+> to Trino SQL — the exact technical challenge faced by BILL's Data
 > Operations team.
 
 ![dbt](https://img.shields.io/badge/dbt-1.11-orange)
@@ -33,7 +31,7 @@ maintaining data quality, output parity, and best practices.
 
 ## Business Context
 
-BILL is a financial operations platform processing billions of dollars 
+BILL is a financial operations platform processing billions of dollars
 in B2B payments annually. Their core data entities are:
 
 - **Invoices** — bills submitted by vendors for payment
@@ -46,19 +44,21 @@ then migrates the complete dbt layer from Snowflake to Trino.
 
 ---
 
-## Architecture!
-[Architecture](docs/architecture.png)
+## Architecture
+
+![Architecture](docs/architecture.png)
 
 The pipeline follows a medallion architecture across two SQL engines:
 
 - **Bronze** — raw data ingested and type-cast from CSV seeds
-- **Silver** — business logic joins across invoices, payments, and vendors  
+- **Silver** — business logic joins across invoices, payments, and vendors
 - **Gold** — aggregated mart tables ready for reporting
 - **Migration** — every model translated from Snowflake to Trino SQL dialect
 
 ---
 
 ## Repository Structure
+
 bill-dbt-migration/
 ├── data/
 │   ├── generate_data.py        ← Synthetic data generator
@@ -76,6 +76,7 @@ bill-dbt-migration/
 └── docs/
 ├── architecture.png        ← Pipeline diagram
 └── sql_dialect_cheatsheet.md
+
 ---
 
 ## Key SQL Dialect Differences Found
@@ -121,7 +122,7 @@ dbt run --profiles-dir .
 dbt test --profiles-dir .
 ```
 
-Tests cover uniqueness, not null constraints, and accepted value 
+Tests cover uniqueness, not null constraints, and accepted value
 validation across all four staging models.
 
 ---
